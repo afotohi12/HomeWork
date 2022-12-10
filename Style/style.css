@@ -2,14 +2,18 @@ body{
   color: brown;
 }
 
-h6{
-  color: coral;
-}
-
 h1{
     color: aqua;
 }
 
-h3{
+div{
+  color: cornflowerblue;
+}
+
+p{
   color: blue;
+}
+
+span{
+  color: firebrick;
 }
