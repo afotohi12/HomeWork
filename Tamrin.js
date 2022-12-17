@@ -1,67 +1,79 @@
 
 
-// //320 to 740
-// var sum_array = [];
-// var summ = 0;
-// for (k = 320; k <= 740; k++) {
-//     sum_array.push(k);
-// }
-// sum_array.map(function (item) {
-//     summ += item;
-// });
-// console.log(summ);
+
 
 // // ///sort
-// var namme = ["ali","reza","khosro","mamad","sara","nazgol","react"];
-// namme.sort();
-// console.log(namme);
+let namme = ["ali","reza","khosro","mamad","sara","nazgol","react"];
+let number = [1,3,4,5,6,7,8,956,345,23413,112,3,434,5,56,4];
+//namme.sort();
+//console.log(namme);
+
+//#delete End Of Array 
+//let result = namme.pop();
+
+//#Add End of Arrey
+//let result = namme.push("Mania");
+
+//#add First of Array 
+//let result = namme.unshift("Mania");
 
 
-// // ///reduce 
-// var redu = sum_array.reduce(function(sum,item){
-//     if(item%7==0){
-//       return sum+1;
-//     }else{ 
-//         return sum;
-//     };
-// },0)
-// console.log(redu);
-////////END 2 Seasion
-////////////////////////////////////////////////////////////////////////////////####Start
+//#delete first of Array 
+//let result = namme.shift();
 
-// for (var i = 1; i <= 100; i++) {
+//#jam 2 Array 
+//let result = number.concat(namme);
 
-//     for (var j = 2; j <= i; j++) {
-//         var Divid  = i % j;
-//         if (Divid == 0) {
-//             numbers.push(i);
-//             break; 
-//         }else if(Divid!=0){
-//              if (i % Divid != 0){
-//                    Aval.push(i);
-//                    break;
-//              };
-//         };
-//     };
+//#search in Array 
+//let result = number.includes(345);
 
-// };
+//#index of number in Array 
+//let result = number.indexOf(345);
+
+//#join all on Array 
+//let result = namme.join("");
+//#seprator in Array 
+//let result = number.join("*");
+
+//#cut between index number 2 start 4 end
+//let result = number.slice(2,4);
+
+//#namayesh az index 2 ta 3 ya 5(3+2)
+//let result = number.splice(2,3);
+//let result = number.splice(2,3+2);
+
+var newnumber = [];
+
+console.time();
+//#return nadarad 
+number.forEach(function (item,index,array){
+    //array[index]=item * 2;
+    newnumber.push(item*10);
+})
+
+//# return darad 
+/*let result = number.map(function (item,index,array){
+    return item*10;
+})
+*/
+
+//# for folter in Array 
+let result = number.filter(function (item,index,array){
+    return item%2==0;
+})
 
 
-// ///aval 
-
-let Aval = [],numbers = [];
-for (var i = 1; i <= 100; i++) {
-    numbers.push(i);
+function ForEach(array,callback){
+    
 };
 
-numbers.forEach(item => {
-    if(item%2 != 0){
-        Aval.push(item);
-    }
-});
+console.log(number);
+console.log(result);
 
- 
-console.log(numbers);
-console.log(Aval);
+console.timeEnd();
+
+
+
+
 
 
