@@ -4,42 +4,42 @@
 
 // // ///sort
 
-//namme.sort();
-//console.log(namme);
+// namme.sort();
+// console.log(namme);
 
-//#delete End Of Array 
-//let result = namme.pop();
+// #delete End Of Array 
+// let result = namme.pop();
 
-//#Add End of Arrey
-//let result = namme.push("Mania");
+// #Add End of Arrey
+// let result = namme.push("Mania");
 
-//#add First of Array 
-//let result = namme.unshift("Mania");
+// #add First of Array 
+// let result = namme.unshift("Mania");
 
 
-//#delete first of Array 
-//let result = namme.shift();
+// #delete first of Array 
+// let result = namme.shift();
 
-//#jam 2 Array 
-//let result = number.concat(namme);
+// #jam 2 Array 
+// let result = number.concat(namme);
 
-//#search in Array 
-//let result = number.includes(345);
+// #search in Array 
+// let result = number.includes(345);
 
-//#index of number in Array 
-//let result = number.indexOf(345);
+// #index of number in Array 
+// let result = number.indexOf(345);
 
-//#join all on Array 
-//let result = namme.join("");
-//#seprator in Array 
-//let result = number.join("*");
+// #join all on Array 
+// let result = namme.join("");
+// #seprator in Array 
+// let result = number.join("*");
 
-//#cut between index number 2 start 4 end
-//let result = number.slice(2,4);
+// #cut between index number 2 start 4 end
+// let result = number.slice(2,4);
 
-//#namayesh az index 2 ta 3 ya 5(3+2)
-//let result = number.splice(2,3);
-//let result = number.splice(2,3+2);
+// #namayesh az index 2 ta 3 ya 5(3+2)
+// let result = number.splice(2,3);
+// let result = number.splice(2,3+2);
 
 
 // console.time();
@@ -91,7 +91,7 @@
 //     console.log("Login SuccessFully");
 // } else { console.log("Access Denid!!"); }
 
-//#get Element By ....
+// #get Element By ....
 // let h1Elem = document.getElementById('Title');
 // let thElem = document.getElementsByClassName('table');
 // let Tag = document.getElementsByTagName('th');
@@ -104,50 +104,94 @@
 
 // console.log(query);
 
-let items = document.querySelectorAll('.table');
+// let items = document.querySelectorAll('.table');
 
-items[1].innerHTML = 'test';
+// items[1].innerHTML = 'test';
 
-console.log(items[1].textContent);
-
-
-let inputs = document.getElementById('input');
-let selectbox = document.getElementById('select');
-items[2].innerHTML = 'About Me';
-selectbox.value = 'Tabriz';
-inputs.value = 'Alireza';
+// console.log(items[1].textContent);
 
 
-let bool = document.getElementById('click');
+// let inputs = document.getElementById('input');
+// let selectbox = document.getElementById('select');
+// items[2].innerHTML = 'About Me';
+// selectbox.value = 'Tabriz';
+// inputs.value = 'Alireza';
 
 
-    function changeFunction() {
-        if (bool.value == 'false') {
-        document.getElementById('func').innerHTML = 'Hello World!';
-        bool.value = 'true';
-    } else {
-    document.getElementById('func').innerHTML = 'Default ?';
-    bool.value = 'false'
+// let bool = document.getElementById('click');
+
+
+//     function changeFunction() {
+//         if (bool.value == 'false') {
+//         document.getElementById('func').innerHTML = 'Hello World!';
+//         bool.value = 'true';
+//     } else {
+//     document.getElementById('func').innerHTML = 'Default ?';
+//     bool.value = 'false'
+// };
+// }
+
+
+
+// let obj = {
+//     Name : 'Alireza' ,
+//     Family : 'fotouhi',
+//     Email : 'afotohi12#yahoo.com',
+//     Score :['14','ali',31,secObj={
+//         Car : 'Toyota',
+//         Color : 'red'
+//     }]
+// }
+// console.log(obj.Score[3]);
+
+
+// function PrintWindow(){
+//     window.print();
+// }
+
+// profile = {
+//     a:{ name: "navid", age: 7 },
+//     b:{ name: "babak", age: 15 },
+//     c:{ name: "mamad", age: 27 },
+//     d:{ name: "hasan", age: 60 },
+//     e:{ name: "khosravi", age: 24 },
+//     f:{ name: "soheil", age: 21 },
+//     g:{ name: "Alireza", age: 73 }
+// }
+// var i;
+// for ( profile[i] in profile) {
+//     console.log(profile[i]);
+
+//     // if (profile[i].age <= 25) {
+//     //     console.log(profile[i].name);
+//     // }
+
+// }
+
+
+// let d  = new Date();
+// console.log(d);
+
+var i = prompt("enter number?");
+console.log(i);
+var str = "";
+star();
+
+function star() {
+    for (var j = 1; j <= i; j++) {
+        for (var k = 0; k < j; k++) {
+            str += "*";
+        };
+        str += "\n";
+    };
 };
-}
+console.log(str);
 
 
 
-let obj = {
-    Name : 'Alireza' ,
-    Family : 'fotouhi',
-    Email : 'afotohi12#yahoo.com',
-    Score :['14','ali',31,secObj={
-        Car : 'Toyota',
-        Color : 'red'
-    }]
-}
-console.log(obj.Score[3]);
 
 
-function PrintWindow(){
-    window.print();
-}
+
 
 
 
